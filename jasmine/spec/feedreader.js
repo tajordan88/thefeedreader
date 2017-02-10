@@ -106,8 +106,10 @@ $(function() {
             entry2;
 
         beforeEach(function(done) {
-            entry1 = $('.feed').html();
-            done();
+            loadFeed(1, function() {
+                entry1 = $('.feed').html();
+                done();
+            });
         });
 
         /* TODO: Write a test that ensures when a new feed is loaded
