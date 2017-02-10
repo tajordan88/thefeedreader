@@ -106,7 +106,7 @@ $(function() {
             entry2;
 
         beforeEach(function(done) {
-            loadFeed(1, function() {
+            loadFeed(0, function() {
                 entry1 = $('.feed').html();
                 done();
             });
